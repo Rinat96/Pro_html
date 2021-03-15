@@ -1,0 +1,101 @@
+.breadcrambs
+    height: 148px
+    background: #F8F3F4
+    display: flex
+    justify-content: space-between
+    align-items: center
+.breadcrambs_head
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 24px
+    line-height: 29px
+    color: $select_color
+.breadcrambs_nav
+    display: flex
+    list-style-type: none
+.breadcrambs_link
+    font-family: Lato
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 17px
+    color: #636363
+    text-decoration: none
+    &:hover
+        color: $select_color
+.breadcrambs_list
+    &:not(:last-child)::after
+        content: '/'
+        margin-left: 8px
+        margin-right: 8px
+    &:last-child a
+        color: $select_color
+        font-weight: bold
+.fetured_select
+    margin-top: 51px
+    display: flex
+
+.fetured_select_filter
+    font-family: Lato
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+    color: #000000
+.summary_filter
+    margin-left: 16px
+    display: block
+.summary_filter::-webkit-details-marker
+    display: none
+.summary_filter::after
+    content: url(../img/logo_filter.svg)
+    margin-left: 11px
+    margin-right: 304px
+.summary_trend
+
+    display: block
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: #6F6E6E
+.summary_trend::-webkit-details-marker
+    display: none
+.summary_trend::after
+    content: url(../img/logo_trend.svg)
+    margin-left: 11px
+    margin-right: 29px
+.nav_box
+    display: flex
+    justify-content: center
+    margin-top: 48px
+    margin-bottom: 96px
+.nav_page
+    border: 1px solid #EBEBEB
+    display: flex
+    justify-content: center
+    padding: 11px
+
+    width: 283px
+.nav_page_list
+    display: flex
+    justify-content: center
+.nav_page_link
+    font-family: Lato
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 19px
+    color: #EBEBEB
+    text-decoration: none
+.nav_page_namber
+    list-style-type: none
+
+.nav_page_namber:not(:last-child)
+    margin-left: 16px
+.nav_page_namber:last-child
+    margin-right: 16px
+.nav_page_namber:first-child .nav_page_link
+    color: $select_color
