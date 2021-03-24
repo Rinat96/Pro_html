@@ -1,0 +1,130 @@
+.product_box
+    display: flex
+    flex-direction: column
+    align-items: center
+.product_photo
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 1600px
+    background: #F7F7F7
+    border: 1px solid #EAEAEA
+.product_photo_style
+    margin-top: 10px
+    margin-bottom: 41px
+.product_catalog
+    margin-bottom: 128px
+    margin-top: 128px
+.product_photo_left:hover .product_select_left
+    fill: $select_color
+.product_photo_right:hover .product_select_right
+    fill: $select_color
+.product_content
+    position: relative
+    border: 1px solid #EAEAEA
+    background: #FFFFFF
+    width: 1140px
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin-top: -66px
+.product_collection
+    font-family: Lato
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 17px
+    color: $select_color
+    margin-top: 64px
+    margin-bottom: 12px
+.product_collection_line
+    width: 64px
+    border-bottom: 3px solid #EF5B70
+.product_head
+    font-family: Lato
+    font-style: normal
+    font-weight: 300
+    font-size: 18px
+    line-height: 22px
+    color: #4D4D4D
+    margin-top: 12px
+    margin-bottom: 48px
+.product_text
+    font-family: Lato
+    font-style: normal
+    font-weight: 300
+    font-size: 14px
+    line-height: 17px
+    text-align: center
+    color: #5E5E5E
+    width: 566px
+.product_price_line
+    border-bottom: 1px solid #EAEAEA
+    width: 641px
+.product_price
+    font-family: Lato
+    font-style: normal
+    font-weight: 300
+    font-size: 24px
+    line-height: 29px
+    color: #EF5B70
+    margin-top: 32px
+    margin-bottom: 65px
+
+.product_choose
+    margin-top: 65px
+    display: flex
+
+.product_choose_size
+    margin-right: 23px
+    position: relative
+    &[open] .product_choose_list
+        padding: 0 10px 0 10px
+        background: #ffffff
+        box-shadow: 4px 6px 35px rgba(0, 0, 0, 0.21)
+.product_choose_head
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: #6F6E6E
+    margin-right: 10px
+.product_choose_list
+    list-style-type: none
+    position: absolute
+.product_buttom
+    margin-top: 48px
+    margin-bottom: 96px
+
+.product_add
+    display: flex
+    text-decoration: none
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 19px
+    color: #F26376
+    align-items: center
+    justify-content: center
+    border: 1px solid #F26376
+    padding: 15px 56px 14px 24px
+    transition: color 1s
+    transition: background-color 1s
+    &:hover
+        background-color: #F26376
+        color: white
+    &:hover .product_cart path
+        fill: white
+.product_cart
+    margin-right: 24px
+.form__error
+    color: red
+    text-align: left
+    font-size: 12px
+    display: block
+    margin-top: 3px
+    display: none
+input:invalid:not(:placeholder-shown) .form__error
+    display: block

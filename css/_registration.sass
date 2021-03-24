@@ -1,0 +1,110 @@
+.registration
+    display: flex
+    padding-top: 64px
+    padding-bottom: 96px
+.reg-form
+    display: flex
+    flex-direction: column
+    margin-right: 128px
+    &__name
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: $ground_color
+
+    &__form
+        font-style: normal
+        font-weight: 300
+        font-size: 13px
+        line-height: 16px
+        color: #B1B1B1
+        border: 1px solid #A4A4A4
+        padding-top: 13px
+        padding-bottom: 16px
+        padding-left: 17px
+        padding-right: 15px
+        margin-top: 21px
+        width: 360px
+    &__radio-box
+        margin-top: 31px
+        margin-right: 10px
+        margin-bottom: 33px
+    &__radio
+        appearance: none
+        &[type=radio]:checked+.reg-form__radio-name:before
+            background: $select_color
+            border: 1px solid $select_color
+    &__radio-name
+        font-style: normal
+        font-weight: 300
+        font-size: 11px
+        line-height: 13px
+        color: #000000
+        margin-right: 20px
+        &:before
+            content: ""
+            display: inline-block
+            width: 18px
+            height: 18px
+            border-radius: 50%
+            border: 1px solid #A4A4A4
+            margin-right: 10px
+            margin-bottom: -5px
+        &:hover
+            color: $select_color
+
+    &__text
+        font-style: normal
+        font-weight: 300
+        font-size: 13px
+        line-height: 16px
+        color: #B1B1B1
+        margin-top: 16px
+        margin-bottom: 39px
+        width: 360px
+    &__submit
+        border: 1px solid $select_color
+        background: $select_color
+        text-align: start
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #FFFFFF
+        padding: 16px 0 17px 29px
+        width: 167px
+        transition: transform 0.5s
+        &:hover
+            transform: scale(1.05)
+        &_img
+            margin-left: 20px
+.reg-content
+    min-width: 354px
+    &__head
+        font-style: inherit
+        font-weight: 300
+        font-size: 1.5rem
+        line-height: 29px
+        color: #000000
+    &__text
+        font-style: normal
+        font-weight: 300
+        font-size: 1.5rem
+        line-height: 29px
+        color: #000000
+        margin: 22px 0 22px 0
+        max-width: 630px
+    &__list
+        &_item
+            list-style-type: none
+            font-style: normal
+            font-weight: 300
+            font-size: 1.5rem
+            line-height: 29px
+            color: #000000
+            margin-bottom: 16px
+
+            &:before
+                margin-right: 23px
+                content: url(../img/reg_select.svg)
