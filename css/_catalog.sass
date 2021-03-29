@@ -1,0 +1,192 @@
+.breadcrambs
+    height: 148px
+    background: #F8F3F4
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &_head
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 29px
+        color: $select_color
+    &_nav
+        display: flex
+        list-style-type: none
+    &_link
+        font-family: Lato
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #636363
+        text-decoration: none
+        &:hover
+            color: $select_color
+    &_list
+        &:not(:last-child)::after
+            content: '/'
+            margin-left: 8px
+            margin-right: 8px
+        &:last-child a
+            color: $select_color
+            font-weight: bold
+.filter_select
+    margin-top: 51px
+    display: flex
+    column-gap: 30px
+    // justify-content: space-between
+.fetured_filter
+    width: 360px
+    position: relative
+.filter
+    &_details
+        width: 360px
+        position: absolute
+        z-index: 1
+        &_category[open] .filter_head_category
+            color: $select_color
+        &_brand
+            margin-top: 18px
+            margin-bottom: 18px
+        &_brand[open] .filter_head_brand
+            color: $select_color
+        &_designer[open] .filter_head_designer
+            color: $select_color
+    &_details[open]
+        background: #ffffff
+        box-shadow: 4px 6px 35px rgba(0, 0, 0, 0.21)
+    &_details[open] .summary_logo path
+        fill: $select_color
+    &_details[open] .filter_head
+        color: $select_color
+    &_box
+        padding: 16px 16px 16px 17px
+    &_head
+        font-family: Lato
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+        margin-right: 11px
+        margin-left: 16px
+    &_list
+        margin-bottom: 24px
+        margin-top: 24px
+        list-style-type: none
+        margin-left: 17px
+    &_item
+        margin-bottom: 11px
+    &_link
+        text-decoration: none
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+.fetured
+    &_select
+        display: flex
+
+    &_select_trend
+        position: absolute
+        z-index: 1
+
+    &_select_size
+        position: absolute
+        z-index: 1
+
+    &_select_size[open] .select_size_list
+        padding: 10px 0px 10px 10px
+        background: #ffffff
+        box-shadow: 4px 6px 35px rgba(0, 0, 0, 0.21)
+    &_select_trend[open] .select_size_list
+        padding: 10px 0px 10px 10px
+        background: #ffffff
+        box-shadow: 4px 6px 35px rgba(0, 0, 0, 0.21)
+    &_select_price[open] .select_size_list
+        padding: 10px 0px 10px 10px
+        background: #ffffff
+        box-shadow: 4px 6px 35px rgba(0, 0, 0, 0.21)
+.select
+    &_trend_box
+        width: 132px
+        margin-right: 15px
+        position: relative
+    &_head
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        margin-right: 10px
+    &_size_list
+        list-style-type: none
+
+    &_size
+        margin-right: 10px
+    &_size_box
+        width: 79px
+        padding-left: 15px
+        margin-right: 15px
+        position: relative
+.summary_logo
+    display: block
+    outline: none
+.summary_logo::-webkit-details-marker
+    display: none
+.category
+    padding: 5px 0px 11px 11px
+    border-left: solid 5px #EF5B70
+    border-bottom: 1px solid #EBEBEB
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: #6F6E6E
+// .summary_trend
+
+//     display: block
+//     font-family: Lato
+//     font-style: normal
+//     font-weight: normal
+//     font-size: 14px
+//     line-height: 17px
+//     color: #6F6E6E
+
+.nav_box
+    display: flex
+    justify-content: center
+    margin-top: 48px
+    margin-bottom: 96px
+.nav_page
+    border: 1px solid #EBEBEB
+    display: flex
+    justify-content: center
+    padding: 11px
+
+    width: 283px
+    &_list
+        display: flex
+        justify-content: center
+    &_link
+        font-family: Lato
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #EBEBEB
+        text-decoration: none
+    &_namber
+        list-style-type: none
+        &:not(:last-child)
+            margin-left: 16px
+        &:last-child
+            margin-right: 16px
+        &:first-child .nav_page_link
+            color: $select_color
