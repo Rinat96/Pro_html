@@ -1,0 +1,457 @@
+@import _vars
+@import _catalog
+@import _product
+@import _cart
+@import _registration
+
+*
+    margin: 0
+    padding: 0
+    font-family: Lato
+body
+    height: 100%
+html
+    font-size: 16px
+    height: 100%
+.wrapper
+    min-height: 100%
+    display: flex
+    flex-direction: column
+.wrapper-top
+    flex-grow: 1
+.container
+    max-width: $width_site
+    margin: 0 auto
+
+.center
+    padding-left: calc(50% - 570px)
+    padding-right: calc(50% - 570px)
+.menu-hidden
+    overflow: hidden
+.header
+    background: $ground_color
+    height: 75px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+.menu
+    position: absolute
+    padding: 16px 16px 32px 34px
+    background: #FFFFFF
+    width: 232px
+    height: 764px
+    top: 75px
+    right: 0
+    box-sizing: border-box
+    transition: right 0.3s
+    box-shadow: 4px 6px 35px rgba(0, 0, 0, 0.21)
+    z-index: 2
+    &__head
+        font-style: normal
+        font-weight: bold
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+    &__checkbox
+        display: none
+        &[type=checkbox]:checked ~ .menu
+            right: -332px
+    &__list
+        list-style-type: none
+        margin-top: 20px
+        &_section
+            font-style: normal
+            font-weight: normal
+            font-size: 14px
+            line-height: 17px
+            color: $select_color
+            text-decoration: none
+
+        &_item
+            list-style-type: none
+            margin-top: 12px
+            & a
+                font-style: normal
+                font-weight: normal
+                font-size: 14px
+                line-height: 17px
+                color: #6F6E6E
+                text-decoration: none
+                margin-left: 20px
+                &:hover
+                    color: $select_color
+.menu-close
+    margin-left: 169px
+    cursor: pointer
+.gamburger
+    cursor: pointer
+.loupe
+    margin-left: 41px
+    cursor: pointer
+.indent-mobile
+    display: none
+.indent:not(:first-child)
+    padding-left: 33px
+
+.promo
+    background: #F1E4E6
+    display: flex
+    padding-left: calc(50% - 800px)
+    padding-right: calc(50% - 800px)
+    &_img
+        width: 50%
+    &_photo
+        height: 761px
+    &_content
+        margin-top: 290px
+        margin-left: 60px
+
+    &_head
+        font-family: Lato
+        font-style: normal
+        font-weight: 900
+        font-size: 48px
+        line-height: 58px
+        color: $ground_color
+        padding-left: 16px
+        border-left: solid 12px $select_color
+
+    &_words
+        font-family: Lato
+        font-style: normal
+        font-weight: 300
+        font-size: 32px
+        line-height: 38px
+        color: $ground_color
+        padding-left: 16px
+        border-left: solid 12px $select_color
+
+    &_words_select
+        color: $select_color
+
+.sale
+    padding-top: 64px
+    padding-bottom: 96px
+    &_top
+        display: flex
+        justify-content: space-between
+        gap: 30px
+    &_item
+        height: 260px
+        width: 360px
+        flex-grow: 1
+        background-position: center
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        transition: transform 1s
+        &:hover
+            transform: scale(1.05)
+    &_text
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 19px
+        text-align: center
+        color: #FFFFFF
+
+    &_head
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 29px
+        text-align: center
+        color: $select_color
+
+    &_for_women
+        background-image: url(../img/for_women.jpg)
+        background-position: center
+    &_for_men
+        background-image: url(../img/for_men.jpg)
+        background-position: center
+    &_for_child
+        background-image: url(../img/for_children.jpg)
+        background-position: center
+    &_bottom
+        background-image: url(../img/accesories.jpg)
+        height: 180px
+        background-position: center
+        margin-top: 30px
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        transition: transform 1s
+        &:hover
+            transform: scale(1.05)
+.fetured
+    &_head
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+    &_h2
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 30px
+        line-height: 36px
+        color: $ground_color
+
+    &_text
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #9F9F9F
+
+    &_content
+        margin-top: 48px
+        display: flex
+        gap: 30px
+        flex-wrap: wrap
+        justify-content: center
+    &_item
+        width: 360px
+        background: #F8F8F8
+        position: relative
+
+    &_item:hover .futured_img
+        filter: brightness(0.4)
+
+    &_item:hover .item_add
+        display: flex
+
+    &_photo
+        width: 100%
+
+    &_item_content
+        padding: 25px 18px 20px 18px
+
+    &_hyper
+        text-decoration: none
+
+    &_h4
+
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 13px
+        line-height: 16px
+        color: #000000
+
+    &_words
+        margin-top: 12px
+        margin-bottom: 18px
+        font-family: Lato
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #5D5D5D
+
+    &_cost
+
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 19px
+        color: $select_color
+
+.item_add
+    text-decoration: none
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: #FFFFFF
+    position: absolute
+    top: 188px
+    left: 112px
+    display: none
+    align-items: center
+    justify-content: center
+    border: 1px solid #FFFFFF
+    width: 138px
+    height: 43px
+
+    &:hover
+        background-color: white
+        color: black
+
+    &:hover .item_cart path
+        fill: black
+
+.item_cart
+    margin-right: 11px
+
+.product_button
+    margin-top: 48px
+    margin-bottom: 96px
+    text-align: center
+
+.button
+    text-decoration: none
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 19px
+    color: #F26376
+    padding: 14px 28px
+    border: 1px solid #FF6A6A
+    transition: color 1s
+    transition: background-color 1s
+    &:hover
+        background-color: #F26376
+        color: white
+
+.about
+    min-height: 340px
+    background: #222224
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+    column-gap: 30px
+    &_img
+        display: flex
+        justify-content: center
+        transition: transform 1s
+        &:hover
+            transform: rotate(360deg)
+    &_h3
+        font-family: Lato
+        font-weight: normal
+        font-size: 19.96px
+        line-height: 24px
+        text-align: center
+        color: #FBFBFB
+        margin-top: 28px
+        margin-bottom: 16px
+
+    &_text
+        font-family: Lato
+        font-style: normal
+        font-weight: 300
+        font-size: 13.972px
+        line-height: 17px
+        text-align: center
+        color: #9e9e9e
+        width: 320px
+
+.subscribe
+    min-height: 448px
+    background-image: url(../img/photo_subscribe.png)
+    background-size: cover
+    background-position: bottom left
+    background-repeat: no-repeat
+    display: flex
+    justify-content: space-between
+
+    &_left
+        display: flex
+        flex-direction: column
+
+        align-items: center
+        padding-top: 86px
+        width: 360px
+
+    &_left_text
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 24px
+        text-align: center
+        color: #222224
+        margin-top: 30px
+
+    &_right
+        padding-top: 150px
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    &_head
+        font-family: Lato
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+
+        text-align: center
+        color: #222224
+
+    &_head_select
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 24px
+        margin-bottom: 27px
+    &_email
+        display: flex
+
+    &_email_style
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        padding: 10px 20px 9px 22px
+        border-radius: 20px 0 0 20px
+        background: #E1E1E1
+        opacity: 0.67
+        width: 250px
+        outline: none
+    &_button_style
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 17px
+        color: #FFFFFF
+        background: #E05C6E
+        border-radius: 0 20px 20px 0
+        padding-top: 15px
+        padding-right: 22px
+        padding-bottom: 14px
+        width: 100px
+        text-align: end
+        outline: none
+        &:hover
+            background: #e03950
+
+.footer
+    background: #222224
+    height: 79px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &_copyright
+        font-family: Lato
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 19px
+        color: #cfcece
+
+    &_indent:not(:first-child)
+        padding-left: 7px
+
+    &_indent:hover path.pic_ground
+        fill: #F26376
+
+    &_indent:hover path.pic_logo
+        fill: white
+@import _m768
+@import _m375

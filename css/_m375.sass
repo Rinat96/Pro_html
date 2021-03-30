@@ -1,0 +1,130 @@
+@media (max-width: 767px)
+    .center
+        padding-left: calc(50% - 212px)
+        padding-right: calc(50% - 212px)
+    .menu-close
+        margin-left: 261px
+    .menu
+        width: 425px
+        height: 383px
+        &__list-column
+            display: flex
+            justify-content: space-between
+        &__checkbox
+            &[type=checkbox]:checked ~ .menu
+                right: -525px
+        &__hi-box
+            margin-bottom: 20px
+            justify-content: end
+    .indent-desk
+        display: none
+    .indent-mobile
+        display: inline-block
+    .promo
+        justify-content: center
+        &_img
+            display: none
+        &_head
+            margin-top: 10px
+        &_words
+            margin-bottom: 148px
+    .sale
+        padding-top: 64px
+        padding-bottom: 64px
+        &_top
+            justify-content: center
+            flex-wrap: wrap
+        &_item
+            height: 246px
+    .fetured
+        &_content
+            margin-top: 64px
+    .subscribe
+        background-size: 490%
+    .breadcrambs
+        flex-direction: column
+        justify-content: stretch
+        &_head
+            margin-top: 24px
+            margin-bottom: 32px
+    .filter_head
+        display: none
+    .filter_select
+        justify-content: space-between
+    .summary-filter svg
+        width: 37px
+        height: 25px
+    .shop
+        text-align: center
+        &__head
+            padding: 50px 0 69px 0
+    .cart
+        padding: 39px 0 96px 0
+        &__left
+            justify-content: center
+            align-items: center
+        &__item
+            width: 358px
+            margin-bottom: 32px
+            &_photo
+                height: 188px
+            &__content
+                margin: 14px 0 0 17px
+                &_head
+                    margin: 0px 16px 26px 0px
+                    font-size: 16px
+                    line-height: 19px
+                    width: 144px
+                &_text
+                    font-size: 14px
+                    line-height: 17px
+                    margin-bottom: 4px
+                &_quantity
+                    font-size: 10px
+                    line-height: 12px
+                    padding: 0 10px 0 10px
+                    margin-left: 24px
+                &_delete
+                    padding: 16px 12px 0 0
+                    & svg
+                        width: 10px
+                        height: 10px
+        &__button-box
+            width: 352px
+            &_button
+                font-size: 12px
+                line-height: 14px
+                text-transform: none
+                padding: 10px 32px
+        &__right
+            flex-direction: column
+            justify-content: center
+            align-items: center
+    .registration
+        flex-direction: column
+        align-items: center
+    .reg-content
+        margin-top: 40px
+@media (max-width: 425px)
+    .center
+        padding-left: 8px
+        padding-right: 8px
+    .promo
+        &_content
+            margin-left: 56px
+        &_head
+            font-size: 38px
+            line-height: 46px
+        &_words
+            font-size: 24px
+            line-height: 30px
+    .subscribe
+        background-size: 600%
+    .footer
+        height: 142px
+        flex-direction: column-reverse
+        justify-content: center
+        &_copyright
+            margin-top: 40px
+        &_right
+            margin-top: 42px
